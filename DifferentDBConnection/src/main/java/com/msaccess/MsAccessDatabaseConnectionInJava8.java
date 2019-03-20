@@ -45,6 +45,8 @@ public class MsAccessDatabaseConnectionInJava8 {
  
             // Step 2.C: Executing SQL and 
             // retrieve data into ResultSet
+            statement.executeUpdate("insert into Test values(4,3,'Virtualladded')");
+          int n=statement.executeUpdate("update Test set Number=12 where Names ='Abc'  ");
             resultSet = statement.executeQuery("SELECT * FROM Test");
  
             System.out.println("ID\tName\t");
